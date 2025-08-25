@@ -102,6 +102,59 @@ main {
 #Features{
   color:#FF900E;
 }
+/* section two */
+.features {
+  display: flex;
+  gap:8.5rem;
+}
+#features-head-title{
+  border-left: 8px solid #FF900E;
+  padding:1.4rem;
+}
+.features-head{
+  font-size: 45px;
+  font-weight: bold;
+  color:#131313;
+}
+.features-head-description{
+  font-size: 16px;
+  color:#727272;
+}
+.features-card{
+  gap:1.2rem;
+}
+.section-features-card {
+  background-color: white;
+  padding:30px 42px;
+  border-radius: 8px;
+  box-shadow:0px 4px 40px 0px rgba(0, 0, 0, 0.06);
+  margin-bottom: 1.5rem;
+}
+.section-features-card-title {
+  color:#131313;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 0;
+}
+.section-features-description{
+  color:#727272;
+  font-size: 16px;
+  margin-bottom: 0;
+}
+#experience-btn{
+  padding:46px 42px;
+  font-size: 25px;
+  font-weight: 500;
+  margin-left: -96px;
+  margin-top: -77px;
+}
+#experience-year{
+  font-size: 4rem;
+  font-weight: bold;
+}
+.architect-img{
+  width: 100%;
+}
 /* section three */
 .fact-title {
   color:#131313;
@@ -160,9 +213,23 @@ main {
 .sponsors-companies > img {
   filter: grayscale(100%);
 }
+/* footer */
+.footer {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+#footer-container{
+  max-width: 1440px;
+  margin: 1rem auto;
+  background-color: #FFF4E7;
+  text-align: center;
+  padding:1.2rem;
+  border-radius: 0.5rem;
+  margin-top: 7rem;
+}
 /* responsive media quary */
 @media screen and (max-width: 576px) {
-  .navbar ,.nav-links,.team-container{
+  .navbar ,.nav-links,.team-container,.features{
     flex-direction:column;
   }
   .team-members-img ,.fact-container,.sponsors-companies{
@@ -179,10 +246,14 @@ main {
   .our-features {
     margin-left: 1.2rem;
   }
+  #experience-btn {
+    margin-left: 1rem;
+    margin-top: 1rem;
+  }
 }
 /* medium device */
 @media screen and (min-width:576px) and (max-width:992px) {
-  .team-container{
+  .team-container,.features{
     flex-direction: column;
   }
   .our-features{
@@ -198,5 +269,9 @@ main {
   .sponsors-companies {
     grid-template-columns: repeat(3,1fr);
     gap:3rem;
+  }
+  #experience-btn {
+    margin-top:1.5rem;
+    margin-left:12rem;
   }
 }
